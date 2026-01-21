@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peminjaman Alat PSPT</title>
+  <link rel="stylesheet" href="css/pinjam.css">
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+    <h2>Form Peminjaman Alat</h2>
+    <form id="form-peminjaman">
+      <div class="form-group">
+        <label>Nama Peminjam</label>
+        <input type="text" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label>Kategori Alat</label>
+        <select name="kategori" id="kategori" required>
+          <option value="">Pilih kategori</option>
+          <option value="Kamera">Kamera</option>
+          <option value="Microphone">Microphone</option>
+          <option value="Peralatan Lainnya">Peralatan Lainnya</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Nama Alat</label>
+        <select name="alat" id="alat" required disabled>
+          <option value="">Pilih alat</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Tanggal Pinjam</label>
+        <input type="date" name="tanggal_pinjam" required>
+      </div>
+
+      <div class="form-group">
+        <label>Tanggal Kembali</label>
+        <input type="date" name="tanggal_kembali" required>
+      </div>
+
+      <button type="submit">Kirim</button>
+      <p id="status"></p>
+    </form>
+  </div>
+
+  <script src="js/pinjam.js"></script>
+</body>
+</html>
