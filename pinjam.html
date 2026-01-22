@@ -16,22 +16,33 @@
         <input type="text" name="nama" required>
       </div>
 
-      <div class="form-group">
-        <label>Kategori Alat</label>
-        <select name="kategori" id="kategori" required>
-          <option value="">Pilih kategori</option>
-          <option value="Kamera">Kamera</option>
-          <option value="Microphone">Microphone</option>
-          <option value="Peralatan Lainnya">Peralatan Lainnya</option>
-        </select>
-      </div>
+      <div id="alat-container">
 
-      <div class="form-group">
-        <label>Nama Alat</label>
-        <select name="alat" id="alat" required disabled>
-          <option value="">Pilih alat</option>
-        </select>
-      </div>
+  <div class="alat-item">
+    <div class="form-group">
+      <label>Kategori Alat</label>
+      <select class="kategori" name="kategori[]" required>
+        <option value="">Pilih kategori</option>
+        <option value="Kamera">Kamera</option>
+        <option value="Microphone">Microphone</option>
+        <option value="Peralatan Lainnya">Peralatan Lainnya</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Nama Alat</label>
+      <select class="alat" name="alat[]" required disabled>
+        <option value="">Pilih alat</option>
+      </select>
+    </div>
+
+  </div>
+</div>
+
+<button type="button" id="tambah-alat" class="btn-secondary">
+  + Tambah Alat
+</button>
+
 
       <div class="form-group">
         <label>Tanggal Pinjam</label>
