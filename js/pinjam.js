@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwV_RXvzvt9hg-MGgTlTh0t3nC7tmIThavMwrMDH6JbulpE05SmUkfYcJ6IdSP5a-7YCw/exec";
 
   const dataAlat = {
-    Kamera: ["Kamera DSLR", "Kamera Mirrorless", "Kamera Video"],
-    Microphone: ["Mic Wireless", "Mic Kabel", "Clip On"],
-    "Peralatan Lainnya": ["Tripod", "Lighting", "Mixer Audio"]
+    Kamera: ["Kamera Foto", "Kamera Mirolles", "Kamera Video", "Baterai Kamera", "Charger Kamera", "Memori Kamera", "Tas Kamera"],
+    Microphone: ["Clip On Catefo", "Clip On Taff Studio", "Mic Boom"],
+    lighting: ["Lighting 100W", "Lighting Besar", "Lighting Stand/Tripod Lighting"],
+    "Peralatan Lainnya": ["Tripod Kamera", "Tripod Hp", "Stabilizer Kamera", "Stabilizer Hp", "Baterai Fujitsu", "Baterai Enelope", "Clapper", "Lainnya"]
   };
 
   function setupDropdown(alatItem) {
